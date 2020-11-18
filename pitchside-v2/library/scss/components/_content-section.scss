@@ -1,0 +1,83 @@
+.m-content-section {
+  padding: 90px 30px 120px;
+  // background-color: $white;
+  background-color: $site-background;
+  @media all and (max-width: 600px) {
+    padding: 60px 20px;
+  }
+  @media all and (max-width: 360px) {
+    padding: 60px 15px;
+  }
+  h2 {
+    color: $white;
+  }
+}
+.home-hero--generic + .m-content-section {
+  @media all and (max-width: 600px) {
+    padding: 0 20px 60px;
+  }
+}
+.js-generic-content-section-fade-in {
+  opacity: 0;
+  position: relative;
+  bottom: -160px;
+}
+
+.m-content-section__inner-padding {
+  padding-right: 120px;
+  padding-left: 120px;
+  @media only screen and (max-width: 1600px) {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  @media only screen and (max-width: 1201px) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @media only screen and (max-width: 992px) {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+.m-content-section__inner {
+  max-width: $inner-width;
+  margin: 0 auto;
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    // iPad portrait 
+    max-width: 680px;
+  }
+}
+
+.home-hero--generic .hero-copy h1 {
+  opacity: 0;
+  position: relative;
+  bottom: -40px;
+}
+.home-hero--generic .hero-copy h2 {
+  opacity: 0;
+  position: relative;
+  bottom: -40px;
+}
+
+
+.c-content-section-image-carousel__wrapper {
+  position: relative;
+}
+.c-content-section-image-carousel {
+  img {
+    width: 100%;
+  }
+  .arrow-wrapper--right {
+    right: 0;
+  }
+  .arrow-wrapper--left {
+    left: 0;
+  }
+}
+p + .c-content-section-image-carousel__wrapper {
+  margin-top: 45px;
+}
+
+
+
+

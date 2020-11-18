@@ -1,0 +1,64 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+$inner-width: 1180px;
+
+$lightGrey: #ebebeb;
+$meta-gray: #9fa6b4;
+$darkBlue: #8c8b8c;
+$gold: #c39e6d;
+$blue: #2980b9;
+
+$border-color: #ccc;
+$disabled-gray: #cfcfcf;
+
+// New colours:
+$black: #0b0401;
+$light-black: #161616;
+$red: #ff4c0d;
+$grey: #e6e6e6;
+$white: #fff;
+$eggshell: #f5efef;
+
+$egleBlack: #000000;
+$egleDarkGrey: #131313;
+$egleYellow: #FFFF00;
+
+// $site-background: #F3F3F3;
+$site-background: $egleBlack;
+$text-color: #1b1b1b;
+$text-color-new: $white;
+
+
+$link-color: $red;
+$link-hover: darken($link-color, 9%);
+
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+
+// $maxWidth: 1100px;
+$maxWidth: 1480px;
+
+//Bootstrap Breakpoints
+$lgBP: 992px;
+$mdBP: 768px;
+$smBP: 576px;

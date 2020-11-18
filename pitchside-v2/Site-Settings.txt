@@ -1,0 +1,18 @@
+Site Settings
+
+
+-- Slider Arrows
+-- Logo
+-- Font(s)
+-- Site background
+-- H1 Font/Styles
+-- H2 Font/Styles
+-- H3 Font/Styles
+-- Copy/P Font/Styles
+-- CTA/Buttons Style
+-- Header Colour & Font styles
+-- Footer Colour & Font Styles
+-- Slider Arrows (left & right)
+-- Social Links
+-- Logo (?)
+-- Favicon (?)

@@ -1,0 +1,529 @@
+.league-data {
+  padding: 0px;
+  background-color: $site-background;
+  .ld__header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    @media all and (max-width: 768px) {
+      display: block;
+    }
+    li {
+      position: relative;
+      display: inline-block;
+      padding: 10px 20px;
+      color: $white;
+      color: $text-color-new;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      @media screen and (max-width: $mdBP) {
+        display: block;
+        padding: 10px 0px;
+      }
+      &:hover,
+      &.active {
+        color: $red;
+        // background-color: $white;
+        text-decoration: underline;
+      }
+    }
+    li:after {
+      background: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    span {
+      position: relative;
+      z-index: 1;
+      @media all and (max-width: 768px) {
+        display: block;
+        padding: 15px 0;
+      }   
+    }
+  }
+
+  .ld__content {
+    margin-bottom: 0;
+    @media all and (min-width: 769px) {
+      // border: 1px solid #0b0401;
+    }
+    li {
+      width: 100%;
+      // padding: 90px 0 45px;
+      padding: 90px 0;
+      background-color: $site-background;
+      border-radius: 0px 0px 5px 5px;
+      display: none;
+      @media screen and (max-width: 992px) {
+        padding: 60px 0;
+      }
+      @media screen and (max-width: $mdBP) {
+        padding: 20px 10px;
+      }
+      @media screen and (max-width: 600px) {
+        padding: 30px 0 20px 0px;
+      }
+      &.active {
+        display: block;
+      }
+
+      .venue-tab {
+        iframe {
+          width: 100%;
+        }
+        address {
+          padding: 50px 30px;
+          font-size: 18px;
+          line-height: 28px;
+          color: $black;
+        }
+      }
+    }
+    iframe {
+      max-width: 100%;
+      @media screen and (max-width: 991px) {
+        margin-top: 45px;
+      }
+    }
+  }
+}
+
+.pay-fees {
+  background-color: $white;
+  padding: 75px 0px;
+}
+
+.cta-buttons {
+  display: flex;
+  margin-top: 25px;
+  // @media all and (max-width: 600px) {
+  // display: grid;
+  // grid-template-rows: 1fr 1fr;
+  // }
+  > a {
+    margin: 0 8px;
+    text-decoration: none;
+    @media all and (max-width: 600px) {
+      margin-bottom: 12px;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+p + .cta-buttons {
+  margin-top: 45px;
+  @media all and (max-width: 600px) {
+    margin-top: 30px;
+  }
+}
+.league-data .ld__content .slick-slider {
+  li {
+    width: auto;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;  
+  }
+  .slick-dots {
+    bottom: 25px;
+    right: 25px;
+    text-align: right;
+  }
+}
+
+.cta-buttons--larger {
+  a {
+    min-width: 180px;
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 23px;
+    // font-size: 16px;
+  }
+}
+
+.venue-tab {
+  padding-bottom: 90px;
+  @media all and (max-width: 991px) {
+    padding-bottom: 60px;
+  }
+  @media all and (max-width: 600px) {
+    padding-bottom: 30px;
+  }
+}
+
+.league-data {
+  .l-tab-headers {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+    @media all and (max-width: 768px) {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      // border-top: 1px solid $egleYellow;
+    }
+    li {
+      flex: 1;
+      text-align: center;
+      padding: 15px 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: $white;
+      background-size: 100%;
+      background-position: center;
+      transition: all .35s ease;
+      @media all and (max-width: 600px) {
+        padding: 12px 20px;
+      }
+    }
+    li.active, li:hover {
+      color: $white; 
+      background-size: 110%;
+    }
+  }
+}
+
+.page-template-page-venue {
+  .league-data .l-tab-headers li {
+    width: 100%;
+  }
+}
+
+.--has-no-sub-menu.active {
+  color: $egleBlack; 
+  background-color: $egleYellow;
+}
+.l-tab-headers__indiv {
+  position: relative;
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: all .25s ease;
+  font-size: 25px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 23px 20px;
+  margin-bottom: 0;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: $egleYellow;
+  background-color: $egleDarkGrey;
+  // border: 1px solid #333333;
+  font-family: 'VT323', monospace;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all .35s ease;
+  @media all and (max-width: 1080px) {
+    padding: 15px;
+  }
+  @media all and (max-width: 1040px) {
+    font-size: 17px;
+    margin: 0;
+  }
+  @media all and (max-width: 768px) {
+    display: block;
+    padding: 0;
+    margin-bottom: 15px;
+    // border-bottom: 1px solid $egleYellow;
+  }
+  &:hover > div, &:focus > div {
+    @media all and (min-width: 769px) {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      z-index: 1;
+    }
+  }
+
+  &.active, &:hover {
+    @media (min-width: 769px) {
+      color: $egleBlack; 
+      background-color: $egleYellow;
+    }
+    // @media (max-width: 768px) {
+    //   .l-tab-headers__dropdown-menu {
+    //     background-color: #000;
+    //     color: $egleYellow;
+    //   }
+    // }
+  }
+  &.--has-sub-menu:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    @media all and (max-width: 940px) {
+      margin-left: 0;
+    }
+    @media all and (min-width: 769px) and (max-width: 920px) {
+      display: none;
+    }
+    @media all and (max-width: 768px) {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+}
+.js-mobile-tab-heading-wrapper,
+.js-tab-heading--mob {
+  // transition: all .35s ease;
+  // @media all and (max-width: 768px) {
+    &.active {
+      background-color: $egleYellow;
+      color: #000;
+    }
+  // }
+}
+.l-tab-headers__dropdown-menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  min-width: 10rem;
+  margin: .125rem 0 0;
+  margin-top: 32px;
+  // padding: 8px 0;
+  padding: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+
+  background-color: #131313;
+  margin: 76px 0 0;
+  top: 0;
+  left: 0;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  text-align: center;
+
+  @media all and (max-width: 1040px) {
+    margin-top: 50px;
+  }
+
+  @media all and (max-width: 768px) {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 0;
+    text-align: center;
+    // background-color: transparent;
+    margin-top: 0;
+    // padding-top: 8px;
+    padding-top: 0;
+    // padding-bottom: 25px;
+    &.active {
+      display: block;
+    }
+  }
+  > div {
+    margin-left: 0;
+    display: block;
+    width: 100%;
+    padding: 4px 20px;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    // background-color: #000;
+    background-color: $egleDarkGrey;
+    border: 0;
+    font-family: 'Yantramanav', sans-serif;
+    color: white;
+    padding: 25px 0;
+    border-top: 2px solid black;
+    @media all and (max-width: 768px) {
+      // padding: 8px 15px;
+      padding: 12px 15px;
+      // &:last-child {
+      //   border-bottom: 1px solid $egleYellow;
+      // }
+    }
+    &:hover,
+    &:focus,
+    &.active {
+      transition: all 0.25s ease;
+      color: $egleYellow;
+      // border-color: white;
+    }
+  }
+}
+
+.leagues-icon-list {
+  // margin-top: -45px;
+  padding: 15px 0;
+  // margin-bottom: 90px;
+  @media all and (max-width: 600px) {
+    padding: 0;
+    margin-bottom: 45px;
+    // margin-top: -45px;
+    background-color: $egleDarkGrey;
+    padding: 15px 0;
+    .text-filled-background {
+      background: none;
+      box-shadow: none;
+    }
+  }
+  &.--mobile {
+    @media (min-width: 601px) {
+      display: none;
+    }
+  }
+  &.--desktop {
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  .icon-list-item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .icon-list {
+    max-width: 100%;
+    margin-top: 0;
+    // margin-bottom: 90px;
+    @media (max-width: 600px) {
+      display: block;
+      // margin-bottom: 60px;
+    }
+  }
+}
+
+.venue-info-content {
+  margin-bottom: 150px;
+  @media all and (max-width: 991px) {
+    margin-bottom: 0;
+    .l-second-content-area {
+      margin-top: 30px;
+    }
+  }
+}
+.l-venue-content {
+  @media screen and (max-width: 991px) {
+    margin-top: 30px;
+  }
+}
+.c-venue-content {
+  h5 {
+    font-family: 'Commuters Sans',sans-serif;
+    line-height: 1.25;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    color: $white;
+  }
+  p {
+    margin-bottom: 0.25rem;
+  }
+  p strong {
+    color: $egleYellow;
+    font-weight: 400;
+  }
+}
+
+
+.l__image-grid {
+  @media all and (max-width: 600px) {
+    margin-bottom: 0;
+  }
+  img {
+    max-width: 100%;
+    width: 100%;
+    @media all and (max-width: 600px) {
+      margin-bottom: 20px;
+    }
+  }
+  .row + .row {
+    margin-top: 30px;
+    @media all and (max-width: 600px) {
+      margin-top: 0;
+      margin-left: -10px;
+      margin-right: -10px;
+      > div {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+.ko-time {
+  background-color: $egleDarkGrey;
+  padding: 45px;
+  @media all and (max-width: 600px) {
+    margin-left: -20px;
+    padding: 15px 20px 10px;
+    width: calc(100% + 40px);
+  }
+  .ko-time__inner {
+    max-width: 340px;
+  }
+}
+.league-egle-wide-bg {
+  background-color: $egleDarkGrey;
+  // margin-left: -90px;
+  // margin-right: -90px;
+  padding: 45px 90px;
+  // width: calc(100% + 180px);
+  .text-filled-background {
+    background: none;
+    box-shadow: none;
+  }
+}
+.league-egle-wide-bg--icons {
+  margin-bottom: 90px;
+  @media all and (max-width: 600px) {
+    display: none;
+  }
+}
+.league-egle-wide-bg--address {
+  @media all and (max-width: 991px) {
+    padding: 0px 30px 25px;
+    margin-top: 30px;
+  }
+  @media all and (max-width: 600px) {
+    margin-left: -20px;
+    padding: 0 20px 15px;
+    width: calc(100% + 40px);
+  }
+}
+
+
+
+
+
+
+
+

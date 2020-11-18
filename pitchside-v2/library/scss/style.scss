@@ -1,0 +1,82 @@
+/*! Made with Bones: http://themble.com/bones :) */
+
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+
+Helpful articles on Sass file organization:
+http://thesassway.com/advanced/modular-css-naming-conventions
+
+******************************************************************/
+
+/*********************
+IMPORTING PARTIALS
+These files are needed at the beginning so that we establish all
+our mixins, functions, and variables that we'll be using across
+the whole project.
+*********************/
+
+// normalize: http://necolas.github.io/normalize.css/
+@import "partials/normalize";
+
+@media print {
+  // styles in print.scss
+  @import "partials/print";
+}
+
+// Sass variables
+@import "partials/variables";
+
+// typography
+@import "partials/typography";
+
+@import "partials/global";
+
+// @import "partials/fullpage-js";
+@import "partials/slick";
+@import "partials/remodal";
+@import "partials/magnific-popup";
+@import "partials/see-more-blocks-section";
+@import "partials/selectric-js";
+
+/*********************
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*********************/
+
+/***
+	Bootstrap
+***/
+@import "bootstrap/bootstrap";
+
+/***
+	Components (Site wide styles)
+***/
+@import "components/header";
+@import "components/footer";
+@import "components/content-section";
+@import "components/scroll-arrow";
+@import "components/button";
+@import "components/content-area";
+
+/***
+	Pages (Specific page styles)
+***/
+@import "pages/home";
+@import "pages/newsroom";
+@import "pages/content-page";
+@import "pages/sportspress";
+@import "pages/single-league";
+
+@import "pages/join-page";
+@import "pages/blog-list";
+@import "pages/leagues-page";

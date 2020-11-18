@@ -1,0 +1,87 @@
+.c-button {
+  display: inline-block;
+  position: relative;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 18px 20px 19px;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 1;
+  transition: color 400ms ease 80ms;
+  font-family: 'Commuters Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding: 20px 35px;
+
+  @media all and (max-width: 600px) {
+    padding: 17px 14px 18px;
+  }
+}
+
+.c-button__inner-text {
+  position: relative;
+  z-index: 2;
+}
+.c-button__background-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  background: $egleYellow;
+  transform: scaleX(0);
+  transform-origin: center left;
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1) 80ms;
+}
+.c-button {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: #fff;
+    .c-button__background-fill {
+      transform: scaleX(1);
+    }
+  }
+}
+.c-button--white-yellow {
+  color: $white !important;
+  border-color: $white;
+  &:hover,
+  &:focus {
+    color: $egleBlack !important;
+    border-color: $egleYellow;
+  }
+}
+.c-button--red {
+  color: $egleYellow;
+  border-color: $egleYellow;
+  &:hover,
+  &:focus {
+    color: $egleBlack;
+  }
+}
+.c-button--red-filled {
+  color: $egleBlack;
+  border: 0;
+  background: $egleYellow;
+  .c-button__background-fill {
+    background: $white;
+  }
+  .c-button__inner-text {
+    color: $egleBlack;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  &:hover,
+  &:focus {
+    color: $egleBlack;
+    .c-button__inner-text {
+      color: $egleBlack;
+    }
+  }
+  
+}
+
+

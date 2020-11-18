@@ -1,0 +1,490 @@
+// .signup-form {
+//   background: $white;
+// }
+
+form {
+  .row label {
+    // padding: 5px 8px;
+    padding: 5px 60px 5px 0;
+    @media all and (max-width: 1080px) {
+      padding: 5px 30px 5px 0;
+    }
+    @media all and (max-width: 600px) {
+      padding: 5px 0;
+    }
+  }
+  input {
+    border-radius: 0;
+    padding: 10px 12px;
+    outline: 0;
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  label {
+    font-family: 'Commuters Sans',sans-serif;
+    text-transform: uppercase;
+    line-height: 1.25;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 12px;
+    font-weight: normal;
+    @media all and (max-width: 600px) {
+      margin-bottom: 25px;
+    }
+  }
+  textarea {
+    outline: 0;
+    border-radius: 0;
+    padding-left: 12px;
+    &:focus {
+      outline: 0;
+    }
+  }
+  span.wpcf7-list-item {
+    margin-left: 0;
+    margin-right: 16px;
+    @media all and (max-width: 600px) {
+      // margin-bottom: 22px;
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+  }
+  input,
+  textarea {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border: 0;
+    // border-bottom: 1px solid #fff;
+    box-shadow: 0px 1px 0px 0px $white !important;
+    @media all and (max-width: 600px) {
+      box-shadow: none !important;
+      border-bottom: 1px solid white;
+    }
+  }
+  input,
+  textarea,
+  select {
+    width: 100%;
+    font-family: 'Yantramanav', sans-serif;
+  }
+  input[type="checkbox"],
+  input[type="radio"] {
+    height: 16px;
+    width: 14px;
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+  input[type="checkbox"] {
+    @media all and (max-width: 600px) {
+      margin-bottom: 0;
+      position: relative;
+      top: 3px;
+    }
+  }
+  .acceptance-998 .wpcf7-list-item-label,
+  .terms .wpcf7-list-item-label {
+    // color: #445567;
+    color: $text-color-new;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding-left: 15px;
+    font-family: 'Yantramanav',sans-serif;
+    text-transform: none;
+  }
+}
+.join-tcs-link {
+  color: $white;
+  margin-top: 10px;
+  a {
+    text-decoration: underline;
+  }
+  a,
+  a:hover,
+  a:focus {
+    color: $white;
+  }
+}
+
+.signup-form {
+  form {
+    padding: 0;
+  }
+  .row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    @media all and (max-width: 600px) {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  input,
+  textarea {
+    background-color: $site-background;
+    // color: #445567;
+    color: $text-color-new;
+    // border: none;
+    transition: all 0.3s;
+    height: 43px;
+    margin: 20px 0 30px 0;
+    font-weight: normal;
+    @media all and (max-width: 600px) {
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+    &:focus {
+      box-shadow: 0px 1px 0px 0px $egleYellow !important;
+      border: 0;
+      @media all and (max-width: 600px) {
+        box-shadow: none !important;
+        border-bottom: 1px solid $egleYellow;
+      }
+    }
+  }
+  label {
+    // color: #445567;
+    color: $text-color-new;
+    top: 10px;
+    font-size: 17px;
+    cursor: text;
+    transition: 0.2s ease-out;
+  }
+
+  input[type=checkbox] {
+    position: relative;
+    visibility: hidden;
+    margin: 0;
+  }
+  input[type=checkbox] + span:before {
+    display: block;
+    position: absolute;
+    content: '';
+    // border-radius: 5px;
+    height: 20px;
+    width: 20px;
+    top: 5px;
+    border: 1px solid #fff;
+  }
+  input[type=checkbox] + span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    // border-radius: 100%;
+    height: 18px;
+    width: 18px;
+    top: 8px;
+    left: 8px;
+    visibility: hidden;
+    // background-color: #fff;
+
+    /*Make it a small rectangle so the border will create an L-shape*/
+    width: 5px;
+    height: 10px;
+ 
+    /*Add a white border on the bottom and left, creating that 'L' */
+    border: solid $egleYellow;
+    border-width: 0 2px 2px 0;
+ 
+    /*Rotate the L 45 degrees to turn it into a checkmark*/
+    transform: rotate(45deg);
+  }
+  input[type=checkbox]:checked + span:before {
+    background: transparent;
+  }
+  input[type=checkbox]:checked + span:after {
+    visibility: visible;
+  }
+
+  input[type=radio] {
+    position: relative;
+    visibility: hidden;
+    margin: 0;
+  }
+  input[type=radio] + span:before {
+    display: block;
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 40px;
+    top: -3px;
+    border: 1px solid #fff;
+  }
+  input[type=radio] + span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    top: 4px;
+    left: 15px;
+    visibility: hidden;
+    // background-color: #fff;
+
+    /*Make it a small rectangle so the border will create an L-shape*/
+    width: 11px;
+    height: 20px;
+ 
+    /*Add a white border on the bottom and left, creating that 'L' */
+    border: solid $egleYellow;
+    border-width: 0 2px 2px 0;
+ 
+    /*Rotate the L 45 degrees to turn it into a checkmark*/
+    transform: rotate(45deg);
+  }
+  input[type=radio]:checked + span:before {
+    background: transparent;
+  }
+  input[type=radio]:checked + span:after {
+    visibility: visible;
+  }
+
+  .form-input-wrapper {
+    position: relative;
+    label {
+      position: absolute;
+      z-index: 1;
+    }
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.input__field--haruki {
+  margin: 4em 1em 1em;
+  padding: 0.4em 0.25em;
+  width: 100%;
+  background: transparent;
+  color: #afb5bb;
+  font-size: 1.55em;
+}
+
+.input__label--haruki {
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  pointer-events: none;
+}
+
+.input__label-content--haruki {
+  transition: transform 0.3s;
+}
+
+.input__label--haruki::before,
+.input__label--haruki::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 4px;
+  background: #6a7989;
+  transition: transform 0.3s;
+}
+
+.input__label--haruki::before {
+  top: 0;
+}
+
+.input__label--haruki::after {
+  bottom: 0;
+}
+
+.input__field--haruki:focus
+  + .input__label--haruki
+  .input__label-content--haruki,
+.input--filled .input__label-content--haruki {
+  transform: translate3d(0, -90%, 0);
+}
+
+.input__field--haruki:focus + .input__label--haruki::before,
+.input--filled .input__label--haruki::before {
+  transform: translate3d(0, -0.5em, 0);
+}
+
+.input__field--haruki:focus + .input__label--haruki::after,
+.input--filled .input__label--haruki::after {
+  transform: translate3d(0, 0.5em, 0);
+}
+
+form .ajax-loader {
+  display: none !important;
+}
+
+.join-form-checkboxes {
+  // padding: 0 22px;
+  padding: 0;
+  label {
+    margin-bottom: 0;
+  }
+  .wpcf7-list-item {
+    display: block;
+    position: relative;
+  }
+}
+
+form .join-form-button-wrapper {
+  padding: 8px;
+  text-align: right;
+  margin-top: 22px;
+  @media all and (max-width: 600px) {
+    margin-top: 45px;
+    margin-bottom: 75px;
+  }
+  &.join-form-button-wrapper--contact {
+    @media all and (max-width: 600px) {
+      margin-top: 0px;
+      margin-bottom: 45px;
+    }
+  }
+  .wpcf7-submit {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    border-radius: 0;
+    background-color: transparent;
+    color: $white;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1.4285714286;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 18px 20px 19px;
+    height: auto;
+    border: 2px solid #fff;
+    min-width: 300px;
+    transition: color 400ms ease 80ms;
+    box-shadow: none !important;
+
+    font-family: 'Commuters Sans',sans-serif;
+    padding: 22px 15px 23px;
+
+    &:hover,
+    &:focus {
+      border-color: $egleYellow;
+      color: $egleBlack;
+      box-shadow: none !important;
+      ~ .c-button__background-fill {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.join-form-button-wrapper__inner {
+  width: 300px;
+  position: relative;
+  margin: 0 auto;
+  // margin-left: auto;
+}
+
+span.wpcf7-not-valid-tip {
+  position: relative;
+  bottom: 24px;
+  letter-spacing: 1px;
+  font-size: 14px;
+  @media all and (max-width: 600px) {
+    bottom: 16px;
+  }
+}
+.join-form-checkboxes span.wpcf7-not-valid-tip {
+  bottom: 0;
+}
+div.wpcf7-mail-sent-ok,
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+  text-align: center;
+  color: $white;
+}
+div.wpcf7-mail-sent-ok {
+  border-color: $egleYellow;
+}
+.wpcf7-list-item-label {
+  cursor: pointer;
+}
+.wpcf7-acceptance .wpcf7-list-item-label {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  padding-left: 15px;
+  text-transform: none;
+  font-family: Yantramanav,sans-serif;
+  a {
+    color: #fff;
+    text-decoration: underline;
+    &:hover, &:focus {
+      color: $egleYellow;
+    }
+  }
+}
+
+.join-form-copy {
+  margin-bottom: 60px;
+  @media all and (min-width: 601px) {
+    padding: 0 8px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: $text-color-new;
+  }
+}
+.wpcf7-radio {
+  .wpcf7-list-item {
+    position: relative;
+    margin-top: 5px;
+    @media all and (max-width: 600px) {
+      display: block;
+    }
+    label {
+      padding: 5px 0;
+    }
+  }
+  .wpcf7-list-item-label {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    font-family: 'Yantramanav',sans-serif;
+    padding-left: 45px;
+    padding-right: 60px;
+  }
+  input {
+    margin-top: 0;
+  }
+}
+
+
+.label-element-substitute {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 400;
+  font-family: 'Commuters Sans',sans-serif;
+  line-height: 1.25;
+  letter-spacing: 1.2px;
+  touch-action: manipulation;
+  color: #fff;
+  top: 10px;
+  font-size: 17px;
+  cursor: text;
+  transition: .2s ease-out;
+  padding: 5px 60px 5px 0;
+}
+@media (max-width: 1080px) {
+  .label-element-substitute {
+      padding: 5px 30px 5px 0;
+  }
+}
+@media (max-width: 600px) {
+  .label-element-substitute {
+      padding: 5px 0;
+  }
+}
+
+

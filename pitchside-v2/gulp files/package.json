@@ -1,0 +1,27 @@
+{
+  "name": "floe-gulp",
+  "version": "1.0.0",
+  "description": "A Gulp file for Ignite floe theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Callum J Jackman Esq.",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-babel": "^6.1.2",
+    "gulp-cache": "^0.1.11",
+    "gulp-clean": "^0.2.4",
+    "gulp-concat": "^2.2.0",
+    "gulp-jshint": "^1.5.5",
+    "gulp-minify-css": "^0.3.4",
+    "gulp-notify": "^1.2.5",
+    "gulp-plumber": "^0.6.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}

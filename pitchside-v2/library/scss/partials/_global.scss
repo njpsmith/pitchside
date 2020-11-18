@@ -1,0 +1,214 @@
+body {
+  background-color: $darkBlue !important;
+  // font-family: "DM Sans", sans-serif;
+  font-family: 'Yantramanav', sans-serif;
+}
+body,
+body * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  hyphens: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: "DM Sans", sans-serif;
+  font-family: 'Commuters Sans', sans-serif;
+  text-transform: uppercase;
+  color: $egleYellow;
+}
+p {
+  color: $text-color-new;
+  letter-spacing: 1.2px;
+}
+
+main {
+  background-color: $site-background;
+}
+
+.content-wrapper {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.image-wrapper {
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  &.cover {
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.button {
+  background-color: $egleYellow;
+  color: $white;
+  padding: 10px 15px;
+  letter-spacing: 1.5px;
+  // border-radius: 5px;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.25s ease;
+  text-transform: uppercase;
+  // font-family: "Fjalla One", sans-serif;
+  // font-family: "Open Sans", sans-serif;
+  // font-family: "DM Sans", sans-serif;
+  font-family: Yantramanav,sans-serif;
+  // font-family: "Roboto", sans-serif;
+  &:hover {
+    color: $egleYellow;
+    text-decoration: none;
+    background-color: $white;
+  }
+}
+
+.subtitle {
+  color: $egleYellow;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 4px;
+  letter-spacing: 2.4px;
+  font-style: normal;
+  text-transform: uppercase;
+  @media screen and (max-width: $mdBP) {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1.4px;
+  }
+}
+
+.text-filled-background {
+  padding: 3px 0;
+  font-weight: 800;
+  font-size: 15px;
+  display: inline;
+  line-height: 205%;
+  // background: #fff;
+  // -webkit-box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+  // box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
+  background: #000;
+  -webkit-box-shadow: 10px 0 0 #000, -10px 0 0 #000;
+  box-shadow: 10px 0 0 #000, -10px 0 0 #000;
+}
+.above-title-text {
+  padding: 3px 0;
+  background: #ff4c0d;
+  color: #fff !important;
+  font-weight: 800;
+  font-size: 15px;
+  display: inline;
+  line-height: 205%;
+  box-shadow: 10px 0 0 #ff4c0d, -10px 0 0 #ff4c0d;
+}
+.above-title-text, .text-filled-background {
+  font-weight: 400;
+  font-family: 'Yantramanav', sans-serif;
+}
+
+.news-box {
+  border-radius: 3px;
+  transition: all 0.25s ease;
+  .image-wrapper {
+    height: 350px;
+    width: 100%;
+  }
+  .content {
+    padding: 30px;
+    .date {
+      color: $egleYellow;
+      font-size: 13px;
+      margin-top: -15px;
+      line-height: 15px;
+      margin-bottom: 12px;
+    }
+    .title {
+      font-size: 22px;
+      line-height: 25px;
+      font-weight: bold;
+      // font-family: "Fjalla One", sans-serif;
+      // font-family: "IBM Plex Sans", sans-serif;
+      // font-family: "DM Sans", sans-serif;
+      font-family: Yantramanav,sans-serif;
+      // font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      color: $white;
+      margin-bottom: 15px;
+    }
+    .excerpt {
+      color: $white;
+      font-size: 17px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  a {
+    text-decoration: none !important;
+  }
+  &:hover {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  &.aside {
+    font-size: 0px;
+    .image-wrapper {
+      display: inline-block;
+      width: 40%;
+      vertical-align: middle;
+      height: 239px;
+      @media screen and (max-width: $mdBP) {
+        width: 100%;
+      }
+    }
+    .content {
+      display: inline-block;
+      width: 60%;
+      vertical-align: middle;
+      padding: 20px;
+      @media screen and (max-width: $mdBP) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.footer {
+  display: none;
+}
+
+.show-on-991 {
+  @media all and (min-width: 992px) {
+    display: none;
+  }
+}
+.hide-on-991 {
+  @media all and (max-width: 991px) {
+    display: none;
+  }
+}
+.hide-on-767 {
+  @media all and (max-width: 767px) {
+    display: none;
+  }
+}
+.hide-on-600 {
+  @media all and (max-width: 600px) {
+    display: none;
+  }
+}
+
+
+
+

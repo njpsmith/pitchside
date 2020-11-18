@@ -1,0 +1,236 @@
+.sp_event,
+.sp_table {
+  background-color: $white;
+  .entry-content {
+    padding: 75px 0px;
+    max-width: $maxWidth;
+    margin: 0 auto;
+
+    .sp-post-content {
+      padding-bottom: 75px;
+    }
+
+    .sp-team-logo {
+      .sp-team-name {
+        color: $text-color-new !important;
+        font-size: 22px !important;
+        line-height: 27px !important;
+        letter-spacing: 1.2px !important;
+        // font-family: "DM Sans", sans-serif !important;
+        font-family: Yantramanav,sans-serif;
+        text-transform: uppercase !important;
+      }
+      img {
+        max-width: 40px;
+        height: auto;
+      }
+    }
+  }
+}
+
+.sp-template {
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    // iPad landscape 
+    padding: 0 30px;
+  }
+}
+/* League Table */
+//.sp-template-league-table{
+.sp-table-caption {
+  font-size: 37px !important;
+  line-height: 40px !important;
+  color: $text-color-new !important;
+  margin-bottom: 20px !important;
+  // font-family: "DM Sans", sans-serif !important;
+  font-family: Yantramanav,sans-serif;
+  text-transform: uppercase !important;
+  border: none !important;
+  padding-top: 0px !important;
+  text-align: center;
+}
+.sp-table-wrapper {
+  padding: 0;
+  @media all and (max-width: 991px) {
+    // padding: 30px 10px 0;
+  }
+  @media all and (max-width: 600px) {
+    // padding: 5px 10px 0;
+    overflow-x: scroll;
+  }
+  // background: #111;
+  table {
+    width: 100%;
+
+    tr {
+      border-bottom: 1px solid #ddd;
+      // border-bottom: 9px solid #111;
+      // border-bottom: 1px solid #F3F3F3;
+      &:nth-child(odd) {
+      }
+    }
+
+    thead {
+      background-color: #ddd !important;
+      border-top: 6px solid #ddd;
+      border-bottom: 10px solid #ddd;
+    }
+    th {
+      font-size: 16px !important;
+      line-height: 1px !important;
+      letter-spacing: 1px !important;
+      font-weight: bold !important;
+      // font-family: "DM Sans", sans-serif !important;
+      font-family: Yantramanav,sans-serif;
+      color: #1b1b1b !important;
+      padding: 15px 10px 10px!important;
+      &.th__pos {
+        padding-left: 30px !important;
+      }
+
+      &.data-w,
+      &.data-d,
+      &.data-l,
+      &.data-f,
+      &.data-a,
+      &.data-gd {
+        @media screen and (max-width: $mdBP) {
+          display: none;
+        }
+      }
+    }
+    tbody {
+      text-align: left !important;
+
+      tr {
+        td {
+          color: $text-color-new;
+        }
+        &.odd {
+          td.data-name {
+            // color: $red !important;
+          }
+        }
+        &.alternate {
+          td.data-date a,
+          td.data-event a,
+          td.data-time a {
+            // color: $red !important;
+          }
+        }
+      }
+    }
+    td {
+      padding: 15px 10px !important;
+      @media screen and (max-width: $mdBP) {
+        padding: 10px 5px !important;
+      }
+      &.tb__pos {
+        padding-left: 30px !important;
+      }
+      &.data-name,
+      &.data-date,
+      &.data-event,
+      &.data-time {
+        // font-family: "DM Sans", sans-serif !important;
+        font-family: Yantramanav,sans-serif;
+        letter-spacing: 1px !important;
+        text-transform: uppercase !important;
+        color: $text-color-new;
+        font-size: 16px;
+        @media all and (max-width: 600px) {
+          font-size: 14px;
+        }
+        a {
+          color: $text-color-new;
+        }
+      }
+
+      &.data-w,
+      &.data-d,
+      &.data-l,
+      &.data-f,
+      &.data-a,
+      &.data-gd {
+        @media screen and (max-width: $mdBP) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.data-goals {
+  @media all and (max-width: 600px) {
+    text-align: center;
+  }
+}
+.sp-data-table .data-rank {
+  text-align: center;
+}
+//}
+
+
+@media all and (max-width: 600px) {
+  .sp-table-wrapper table th {
+    font-size: 14px !important;
+  }
+  .sp-table-wrapper table td.data-name,
+  .sp-table-wrapper table td.data-date,
+  .sp-table-wrapper table td.data-event,
+  .sp-table-wrapper table td.data-time {
+    letter-spacing: 0.5px !important;
+    font-size: 14px !important;
+  }
+}
+.sp-player-list tr:nth-child(1n + 11) {
+  display: none;
+}
+
+// New styling
+.sp-table-wrapper {
+  tbody {
+    // td:first-child {
+      // color: $grey !important;
+      // font-weight: 600;
+    // }
+    td:nth-child(2) {
+      font-weight: 600;
+    }
+    td:last-child {
+      color: $egleYellow !important;
+      // font-weight: 600;
+    }
+  }
+  .sp-event-list {
+    td:last-child {
+      color: $text-color-new !important;
+    }
+    td:nth-child(3) {
+      color: $egleYellow !important;
+      @media all and (max-width: 600px) { 
+        text-align: center;
+      }
+    }
+    .data-day {
+      @media all and (max-width: 600px) { 
+        display: none;
+      }
+    }
+  }
+}
+.sp-player-list td {
+  line-height: 1.5;
+}
+.sp-table-wrapper table tr:nth-child(6n + 4) td,
+.sp-table-wrapper table tr:nth-child(6n + 5) td,
+.sp-table-wrapper table tr:nth-child(6n + 6) td {
+  // color: #ff4c0d !important;
+}
+.sp-table-wrapper .dataTables_paginate a,
+.sp-table-wrapper .dataTables_paginate .current {
+  color: $egleYellow;
+}
+.sp-template-player-list .dataTables_paginate {
+  display: none;
+}
+
+

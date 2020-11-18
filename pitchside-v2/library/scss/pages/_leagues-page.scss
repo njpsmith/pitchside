@@ -1,0 +1,46 @@
+.league-day-buttons {
+  position: relative;
+  opacity: 0;
+  bottom: -40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  @media all and (max-width: 600px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+  > a {
+    margin: 0 8px;
+    @media all and (max-width: 600px) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.icon-list-wrapper--league-page {
+  margin-bottom: 65px;
+}
+
+.single-leagues {
+  .blog-content {
+    .pay-fees {
+      padding: 0;
+      .subtitle {
+        display: none;
+      }
+    }
+  }
+  .league-data {
+    padding-bottom: 0px;
+  }
+  .sp-template-event-list .sp-table-caption,
+  .sp-template-league-table .sp-table-caption,
+  li .sportspress > .sp-table-caption {
+    display: none;
+  }
+}
+
+
+
+
+
