@@ -50,37 +50,48 @@
 
 		<div id="container">
 
-			<header class="header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<header class="header <?php if(get_the_ID() == 2465) { ?>header--v2<?php } ?>" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 				<div id="inner-header" class="content-wrapper">
           <a class="logo" href="<?php echo home_url(); ?>" rel="nofollow">
-            <!-- <img src="<?php echo get_template_directory_uri(); ?>/library/images/Pitchside-Text-logo.png" /> -->
             <img src="<?php echo get_template_directory_uri(); ?>/library/images/pitchside-logo-yellow.png" />
           </a>
           
-          <?php if($_GET['show-social-icons'] == true) { ?>
-            <ul class="social-icons">
-              <li>
-                <a href="https://www.instagram.com/pitchside.london/" target="_blank">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>
-              </li>
-              <!-- <li>
-                <a href="https://www.facebook.com/pitchside.london/" target="_blank">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://twitter.com/pitchsidelondon" target="_blank">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li class="social-icons__youtube">
-                <a href="https://www.youtube.com/channel/UCN7_gZ3h04YmPWbUC3sDwBg" target="_blank">
-                  <i class="fa fa-youtube" aria-hidden="true"></i>
-                </a>
-              </li> -->
-            </ul>
+          <?php if(get_the_ID() == 2465) { ?>
+            <div class="header--v2__rhs">
+              <nav class="desktop-nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <ul>
+                  <li id="menu-item-23" class="desktop-nav__dropdown-item menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
+                    <a href="<?php echo get_site_url(); ?>/leagues/">LEAGUES</a>&nbsp;<i class="fa fa-angle-down"></i>
+                    <ul class="desktop-nav__subnav">
+                      <li><a href="<?php echo get_site_url(); ?>/leagues/warren-street/">Warren Street</a></li>
+                    </ul>
+                  </li>
+                  <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://pitchside.london/join/">JOIN US</a></li>
+                  <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="https://pitchside.london/about-us/">ABOUT</a></li>
+                  <li id="menu-item-972" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-972"><a href="https://pitchside.london/newsroom/">NEWSROOM</a></li>
+                  <li id="menu-item-1650" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1650"><a href="https://pitchside.london/contact/">CONTACT</a></li>
+                  <!-- <li id="menu-item-973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-973"><a href="#fees">FEES</a></li> -->
+                </ul>
+              </nav>
+
+              <!-- <div class="header__email-address">
+                <a href="mailto:hello@pitchside.london">hello@pitchside.london</a>
+              </div> -->
+
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.instagram.com/pitchside.london/" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/pitchside.london/" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           <?php } else { ?>
             <div class="l-header-leagues-dropdown">
               <a href="<?php echo get_site_url(); ?>/leagues/" class="l-header-leagues-dropdown__title">LEAGUES</a>
