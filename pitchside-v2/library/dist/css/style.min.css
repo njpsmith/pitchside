@@ -25,7 +25,7 @@
     font-size: 17px;
     cursor: text;
     transition: .2s ease-out;
-    padding: 5px 60px 5px 0;
+    padding: 0 60px 5px 0;
 }
 @media (max-width: 1080px) {
 	.label-element-substitute {
@@ -48,6 +48,10 @@
   font-size: 13px;
 	font-family: 'Commuters Sans',sans-serif
 }
+.desktop-nav li a:hover,
+.desktop-nav li a:focus {
+	text-decoration: none;
+}
 .desktop-nav__subnav {
 	display: none;
 }
@@ -56,7 +60,14 @@
 }
 .desktop-nav__subnav {
 	position: absolute;
- 	min-width: 200px;
+  min-width: 156px;
+  background: white;
+  padding: 3px 10px;
+}
+.desktop-nav__subnav li a,  
+.desktop-nav > ul > li:hover .desktop-nav__subnav li a,  
+.desktop-nav > ul > li:focus .desktop-nav__subnav li a { 
+	color: black;
 }
 .desktop-nav__dropdown-item:hover .desktop-nav__subnav,
 .desktop-nav__dropdown-item:active .desktop-nav__subnav {
