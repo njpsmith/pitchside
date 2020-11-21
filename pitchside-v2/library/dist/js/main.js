@@ -3415,48 +3415,48 @@ function init(){
 
 
   // Typewriter animations
-  var typewriterTimeline = new TimelineMax({
-    paused: true
-  });
-  // letter animation
-  typewriterTimeline.fromTo(".js__anim-typewriter.line-1", 4, { //previously 8 seconds, 37 ease.config
-    width: "0",
-  }, {
-    width: "200px", /* same as CSS .line-1 width */
-    delay: 3,
-    ease: SteppedEase.config(15)
-  }, 0);
-  // text cursor animation
-  typewriterTimeline.fromTo(".js__anim-typewriter.line-1", 0.5, {
-    "border-right-color": "rgba(255,255,255,0.75)"
-  }, {
-    "border-right-color": "rgba(255,255,255,0)",
-    repeat: 20,
-    delay: 3,
-    ease:  SteppedEase.config(37)
-  }, 0);
-  typewriterTimeline.play();
+  // var typewriterTimeline = new TimelineMax({
+  //   paused: true
+  // });
+  // // letter animation
+  // typewriterTimeline.fromTo(".js__anim-typewriter.line-1", 4, { //previously 8 seconds, 37 ease.config
+  //   width: "0",
+  // }, {
+  //   width: "200px", /* same as CSS .line-1 width */
+  //   delay: 3,
+  //   ease: SteppedEase.config(15)
+  // }, 0);
+  // // text cursor animation
+  // typewriterTimeline.fromTo(".js__anim-typewriter.line-1", 0.5, {
+  //   "border-right-color": "rgba(255,255,255,0.75)"
+  // }, {
+  //   "border-right-color": "rgba(255,255,255,0)",
+  //   repeat: 20,
+  //   delay: 3,
+  //   ease:  SteppedEase.config(37)
+  // }, 0);
+  // typewriterTimeline.play();
 
 
-  var typewriterTimeline2 = new TimelineMax({
-    paused: true
-  });
-  // letter animation
-  typewriterTimeline2.fromTo(".js__anim-typewriter.line-2", 3, { //previously 8 seconds, 37 ease.config
-    width: "0",
-  }, {
-    width: "130px", /* same as CSS .line-1 width */
-    ease: SteppedEase.config(15)
-  }, 0);
-  // text cursor animation
-  typewriterTimeline2.fromTo(".js__anim-typewriter.line-2", 0.5, {
-    "border-right-color": "rgba(255,255,255,0.75)"
-  }, {
-    "border-right-color": "rgba(255,255,255,0)",
-    repeat: 6,
-    ease:  SteppedEase.config(37)
-  }, 0);
-  typewriterTimeline2.play();
+  // var typewriterTimeline2 = new TimelineMax({
+  //   paused: true
+  // });
+  // // letter animation
+  // typewriterTimeline2.fromTo(".js__anim-typewriter.line-2", 3, { //previously 8 seconds, 37 ease.config
+  //   width: "0",
+  // }, {
+  //   width: "130px", /* same as CSS .line-1 width */
+  //   ease: SteppedEase.config(15)
+  // }, 0);
+  // // text cursor animation
+  // typewriterTimeline2.fromTo(".js__anim-typewriter.line-2", 0.5, {
+  //   "border-right-color": "rgba(255,255,255,0.75)"
+  // }, {
+  //   "border-right-color": "rgba(255,255,255,0)",
+  //   repeat: 6,
+  //   ease:  SteppedEase.config(37)
+  // }, 0);
+  // typewriterTimeline2.play();
 }
 
 

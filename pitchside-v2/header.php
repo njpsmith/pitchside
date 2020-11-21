@@ -62,10 +62,7 @@
               <nav class="desktop-nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
                 <ul>
                   <li id="menu-item-23" class="desktop-nav__dropdown-item menu-item menu-item-type-post_type menu-item-object-page menu-item-23">
-                    <a href="<?php echo get_site_url(); ?>/leagues/">LEAGUES</a>&nbsp;<i class="fa fa-angle-down"></i>
-                    <ul class="desktop-nav__subnav">
-                      <li><a href="<?php echo get_site_url(); ?>/leagues/warren-street/">Warren Street</a></li>
-                    </ul>
+                    <a href="<?php echo get_site_url(); ?>/leagues/">LEAGUES</a>
                   </li>
                   <li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a href="https://pitchside.london/join/">JOIN US</a></li>
                   <li id="menu-item-26" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26"><a href="https://pitchside.london/about-us/">ABOUT</a></li>
