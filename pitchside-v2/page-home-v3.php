@@ -58,7 +58,7 @@
         <div class="sidebar-container">
           <div class="sidebar-container__inner">
             <h5>Register Now</h5>
-            <!-- <p>To register for a league complete the form below - solo and team options available.</p> -->
+            <p>To register for a league complete the form below - solo and team options available.</p>
 
             <?php echo do_shortcode('[contact-form-7 id="2468" title="Join Us Form (sidebar)"]'); ?>
           </div>

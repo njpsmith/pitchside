@@ -7,9 +7,6 @@
  ?>
 
 
-
-
-
     <div class="js-header-background-trigger"></div>
 		<section class="section home-hero home-hero--generic">
 			<div class="hh__background <?php if(!get_field('use_image_overlay')) { echo 'no-background-overlay'; } ?>">

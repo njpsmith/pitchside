@@ -7,9 +7,6 @@
  ?>
 
 
-
-
-
 <div class="arrow-wrapper arrow-wrapper--left arrow-wrapper--has-hover-effect js-scroll-prev not-active">
   <div class="nav-arrow nav-arrow--left">
     <div class="line-1"></div>
@@ -135,7 +132,6 @@
         </div>
       </div>
     </section>
-    
     
   </div>
 
