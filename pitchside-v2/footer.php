@@ -29,6 +29,10 @@
 							</div>
 
 							<div class="col-md-3 text-md-right">
+								<div class="footer__logo">
+									<img src="https://pitchside.london/wp-content/uploads/2020/11/footer-logo.png">
+								</div>
+
 								<ul class="social-icons">
 									<li>
 										<a href="https://www.instagram.com/pitchside.london/" target="_blank">

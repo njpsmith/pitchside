@@ -9,6 +9,10 @@
       </div>
       
       <div>
+        <div class="footer__logo">
+          <img src="https://pitchside.london/wp-content/uploads/2020/11/footer-logo.png">
+        </div>
+        
         <!-- <a href="https://www.instagram.com/pitchside.london/" target="_blank">#PITCHSIDELONDON</a> -->
         <ul class="social-icons">
           <li>

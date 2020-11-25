@@ -66,7 +66,7 @@
 
           <?php $img = get_field('background_image'); ?>
           <div class="sidebar-promobox" style="background-image: url('<?php echo $img['sizes']['medium']; ?>')">
-            <h6><?php the_field('promo_subtitle'); ?></h6>
+            <div><h6 class="above-title-text"><?php the_field('promo_subtitle'); ?></h6></div>
             <h5><?php the_field('promo_title'); ?></h5>
 
             <div class="cta-buttons">
@@ -81,6 +81,7 @@
     </div>
     
 
+    <?php get_template_part( 'footer-section' ); ?>
    
    
     <script src="<?php echo get_template_directory_uri(); ?>/library/dist/js/jquery.selectric.min.js"></script>

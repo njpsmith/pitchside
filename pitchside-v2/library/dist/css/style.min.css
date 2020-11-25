@@ -10,6 +10,9 @@
   padding: 12px 25px;
 }
 
+.nav-is-open header.header--v2 {
+	background-color: #161616e6;
+}
 
 .above-title-text {
 	background: #FF0;
@@ -19,6 +22,82 @@
 	font-family: 'Commuters Sans',sans-serif;
 }
 
+.page-template-page-home-v3 div.wpcf7-response-output {
+	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom: 6px;
+	letter-spacing: .25px;
+}
+.page-template-page-home-v3 .home-hero--v3-row .hero-copy .above-title-text {
+	left: 10px;
+}
+
+.page-template-page-home-v3 form .wpcf7-form-control-wrap.application-type .wpcf7-list-item-label,
+.page-template-page-home-v3 form .acceptance-998 .wpcf7-list-item-label {
+	color: #575757;
+}
+.sidebar-container input[type="radio"]:checked + span,
+.sidebar-container input[type="checkbox"]:checked + span {
+  color: #fff !important;
+}
+.page-template-page-home-v3 .l-footer-section .social-icons {
+	display: none;
+}
+
+/* UNCOMMENT ON LIVE */
+.footer__logo {
+	display: none;
+}
+.page-template-page-home-v3 .footer__logo {
+	display: block;
+}
+.footer__logo img {
+	max-width: 170px;
+	width: 100%;
+}
+
+.signup-form input[type=radio]:not(:checked) + span:before,
+.sidebar-container form input[type=checkbox]:not(:checked) + span:before {
+	border-color: #575757;
+}
+
+.signup-form__team-indiv .wpcf7-form-control {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.signup-form__team-indiv .wpcf7-list-item {
+	display: inline-block;
+	margin: 0;
+}
+.signup-form__team-indiv .wpcf7-list-item-label {
+	color: #575757;
+	font-weight: 400;
+	text-transform: none;
+	letter-spacing: .25px;
+	font-size: 14px;
+	font-family: Yantramanav,sans-serif;
+	padding-right: 60px;
+	padding-left: 37px;
+}
+.signup-form__team-indiv .wpcf7-list-item {
+	position: relative;
+  margin-top: 5px;
+}
+.signup-form__team-indiv label {
+  padding: 5px 0 0 !important;
+}
+.signup-form__team-indiv input + span:before {
+  height: 40px !important;
+  width: 40px !important;
+  top: -3px !important;
+}
+.signup-form__team-indiv input[type=checkbox] + span:after {
+	top: 4px;
+  left: 15px;
+  width: 11px;
+  height: 20px;
+}
 
 .label-element-substitute {
     text-transform: uppercase;
@@ -163,6 +242,8 @@ header.header--v2 .social-icons {
 .page-template-page-home-v3 .l-footer-section {
 	display: none;
 }
+/* UNCOMMENT TO REMOVE DARK BGS */
+/*.home-hero .hh__background,*/ 
 .page-template-page-home-v3 .home-hero .hh__background {
 	left: 0;
 	width: 100%;
@@ -196,7 +277,7 @@ header.header--v2 .social-icons li a:focus {
 	display: none;
 } 
 .header--v2 .header--v2__rhs {
-	padding-right: 100px;
+	padding-right: 75px;
 }
 @media all and (max-width: 1200px) {
  	.header--v2 .logo {
@@ -373,6 +454,9 @@ header.header--v2 .social-icons li a:focus {
 }
 @media all and (max-width: 991px),
 all and (max-height: 670px) {
+	.page-template-page-home-v3 .l-footer-section {
+		display: block;
+	}
 	.home-hero--v3-row {
 	  display: block;
 	}
@@ -387,6 +471,31 @@ all and (max-height: 670px) {
 	.sidebar-container .join-form-checkboxes {
     margin-top: 18px;
 	}
+	.sidebar-container .selectric-wrapper {
+		margin-top: 20px;
+	}
+	.sidebar-container form label {
+		margin-bottom: 18px;
+	}
+	.sidebar-container__inner {
+		padding-bottom: 42px;
+	}
+}
+@media all and (max-width: 600px),
+screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+ 	.signup-form__team-indiv .wpcf7-form-control {
+		display: block;
+	}
+	.signup-form__team-indiv .wpcf7-list-item {
+    display: block;
+    height: 50px;
+	}
+	.sidebar-container .join-form-checkboxes {
+    margin-top: 0;
+	}
+	.sidebar-container .join-form-checkboxes.signup-form {
+		width: 100%;
+	}
 }
 @media all and (max-width: 600px) {
   .sidebar-container form .join-form-button-wrapper {
@@ -394,7 +503,16 @@ all and (max-height: 670px) {
     margin-bottom: 0;
 	}
 	.sidebar-container .join-form-checkboxes label {
-		margin-top: 10px;
+		margin-top: 0px;
+	}
+	.sidebar-promobox {
+    min-height: 340px;
+	}
+	.header--v2 .header--v2__rhs {
+		padding-right: 60px;
+	}
+	.footer__logo img {
+		max-width: 150px;
 	}
 }
 @media all and (max-width: 371px) {
@@ -430,14 +548,17 @@ all and (max-height: 670px) {
 	z-index: 1;
 }
 .sidebar-promobox h6 {
+	position: relative;
+	left: 10px;
   /*font-family: VT323,monospace;*/
 	margin-bottom: 20px;
-  font-size: 13px;
+  font-size: 13px !important;
 	letter-spacing: 0.5px;
   margin-bottom: 0;
 }
 .sidebar-promobox h5 {
-  margin-top: 8px;
+  /*margin-top: 8px;*/
+  margin-top: 16px;
   color: #FFF;
 }
 .sidebar-promobox:after {
@@ -481,6 +602,11 @@ all and (max-height: 670px) {
 .sidebar-container .wpcf7-not-valid input[type=checkbox]+span:before {
   border: 1px solid red;
 }
+
+
+
+
+
 
 
 
