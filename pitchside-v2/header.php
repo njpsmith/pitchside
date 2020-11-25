@@ -50,14 +50,13 @@
 
 		<div id="container">
 
-			<header class="header <?php if(get_the_ID() == 2465) { ?>header--v2<?php } ?>" role="banner" itemscope itemtype="http://schema.org/WPHeader">
+			<header class="header header--v2" role="banner" itemscope itemtype="http://schema.org/WPHeader">
 
 				<div id="inner-header" class="content-wrapper">
           <a class="logo" href="<?php echo home_url(); ?>" rel="nofollow">
             <img src="<?php echo get_template_directory_uri(); ?>/library/images/pitchside-logo-yellow.png" />
           </a>
           
-          <?php if(get_the_ID() == 2465) { ?>
             <div class="header--v2__rhs">
               <nav class="desktop-nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
                 <ul>
@@ -89,14 +88,14 @@
                 </li>
               </ul>
             </div>
-          <?php } else { ?>
-            <div class="l-header-leagues-dropdown">
+
+            <!-- <div class="l-header-leagues-dropdown">
               <a href="<?php echo get_site_url(); ?>/leagues/" class="l-header-leagues-dropdown__title">LEAGUES</a>
               <ul class="l-header-leagues-dropdown__dropdown">
                 <li><a href="<?php echo get_site_url(); ?>/leagues/warren-street/">Warren Street</a></li>
               </ul>
-            </div>
-          <?php } ?>
+            </div> -->
+
 
           <div class="header__navicon navicon js__open-nav" tabindex="0" data-navicon="">
             <i class="navicon__bar navicon__bar--top"></i>

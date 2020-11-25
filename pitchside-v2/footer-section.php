@@ -15,11 +15,11 @@
         
         <!-- <a href="https://www.instagram.com/pitchside.london/" target="_blank">#PITCHSIDELONDON</a> -->
         <ul class="social-icons">
-          <li>
+          <!-- <li>
             <a href="https://www.instagram.com/pitchside.london/" target="_blank">
               <i class="fa fa-instagram" aria-hidden="true"></i>
             </a>
-          </li>
+          </li> -->
           <!-- <li>
             <a href="https://www.facebook.com/pitchside.london/" target="_blank">
               <i class="fa fa-facebook" aria-hidden="true"></i>
