@@ -76,6 +76,7 @@
 .signup-form__team-indiv .wpcf7-list-item {
 	display: inline-block;
 	margin: 0;
+	height: 47px;
 }
 .signup-form__team-indiv .wpcf7-list-item-label {
 	color: #575757;
@@ -85,7 +86,8 @@
 	font-size: 14px;
 	font-family: Yantramanav,sans-serif;
 	padding-right: 60px;
-	padding-left: 37px;
+	/*padding-left: 37px;*/
+	padding-left: 50px;
 }
 .signup-form__team-indiv .wpcf7-list-item {
 	position: relative;
@@ -381,7 +383,8 @@ header.header--v2 .social-icons li a:focus {
   border-bottom: 0;
 }
 .sidebar-container form input[type=checkbox] {
-  position: relative;
+  /*position: relative;*/
+  position: absolute;
   visibility: hidden;
   margin: 0;
 }
@@ -458,6 +461,9 @@ header.header--v2 .social-icons li a:focus {
 }
 .sidebar-container .selectric-wrapper {
 	margin-top: 10px;
+}
+.sidebar-container .acceptance-998 .wpcf7-list-item-label {
+	padding-left: 30px;
 }
 @media all and (max-width: 991px),
 all and (max-height: 670px) {
