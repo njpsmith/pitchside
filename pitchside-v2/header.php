@@ -105,7 +105,7 @@
       </div>
     </header>
 
-    <div class="js__mobile-nav c__mobile-nav">
+    <div class="js__mobile-nav c__mobile-nav" id="nav-overlay">
       <nav class="mobile-nav__popup" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
         <?php wp_nav_menu(array(
           'container' => false,                           // remove nav container
