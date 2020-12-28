@@ -29,7 +29,6 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
