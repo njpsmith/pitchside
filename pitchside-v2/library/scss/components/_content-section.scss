@@ -1,6 +1,8 @@
 .m-content-section {
+  // Added this relative position/z-index so that the video on the league pages doesn't run under the sides of this container
+  position: relative;
+  z-index: 0;
   padding: 90px 30px 120px;
-  // background-color: $white;
   background-color: $site-background;
   @media all and (max-width: 600px) {
     padding: 60px 20px;
