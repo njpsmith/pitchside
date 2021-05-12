@@ -10,7 +10,8 @@
       
       <div>
         <div class="footer__logo">
-          <img src="https://pitchside.london/wp-content/uploads/2020/11/footer-logo.png">
+          <!-- <img src="https://pitchside.london/wp-content/uploads/2020/11/footer-logo.png"> -->
+          <img src="<?php echo get_template_directory_uri(); ?>/library/images/pitchside-logo-yellow.png" />
         </div>
         
         <!-- <a href="https://www.instagram.com/pitchside.london/" target="_blank">#PITCHSIDELONDON</a> -->

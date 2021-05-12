@@ -83,7 +83,8 @@ footer.footer {
     padding-right: 15px;
   }
   color: $egleBlack;
-  background-color: $egleYellow;
+  // background-color: $egleYellow;
+  background-color: $egleBlack;
   font-size: 17px;
   line-height: 1.75;
   letter-spacing: 1.2px;
@@ -91,7 +92,8 @@ footer.footer {
   a {
     // color: $light-black;
     // color: $text-color;
-    color: $egleBlack;
+    // color: $egleBlack;
+    color: $white;
     font-family: 'Yantramanav', sans-serif;
     @media all and (max-width: 600px) {
       font-size: 13px;

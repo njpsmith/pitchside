@@ -30,7 +30,8 @@
 
 							<div class="col-md-3 text-md-right">
 								<div class="footer__logo">
-									<img src="https://pitchside.london/wp-content/uploads/2020/11/footer-logo.png">
+									<!-- <img src="https://pitchside.london/wp-content/uploads/2020/11/footer-logo.png"> -->
+									<img src="<?php echo get_template_directory_uri(); ?>/library/images/pitchside-logo-yellow.png" />
 								</div>
 
 								<ul class="social-icons">
