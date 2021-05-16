@@ -3381,7 +3381,7 @@ function init(){
   var slideZeroTitle = $('.home-hero--slide-0 .hero-copy h1');
   var slideZeroSubtitle = $('.home-hero--slide-0 .hero-copy h2');
   var slideZeroButtons = $('.home-hero--slide-0 .split-buttons');
-  var splitButtonsHomepageV3 = $('.page-template-page-home-v3 .split-buttons');
+  var splitButtonsHomepageV3 = $('.page-template-page-home-v4 .split-buttons');
 
   TweenLite.from(slideZeroTitle, 1.5, {opacity:"0", bottom:"-40px", ease: Power2.easeOut, delay:0.7});
   TweenLite.from(slideZeroSubtitle, 1.5, {opacity:"0", bottom:"-40px", ease: Power2.easeOut, delay:0.9});

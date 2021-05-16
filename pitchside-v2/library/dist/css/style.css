@@ -8673,7 +8673,7 @@ header.header {
         transform: scale(1) rotate(-45deg); }
 
 .home header.header {
-  background: none; }
+  background: #000; }
 
 .header__navicon {
   -webkit-transition: opacity 1s, -webkit-transform 1s;
@@ -9143,7 +9143,7 @@ footer.footer {
 
 @media all and (max-width: 600px) {
   .home-hero--generic + .m-content-section {
-    padding: 0 20px 60px; } }
+    padding: 60px 20px 60px; } }
 
 .js-generic-content-section-fade-in {
   opacity: 0;
@@ -11215,6 +11215,9 @@ form .terms .wpcf7-list-item-label {
 .signup-form p {
   margin: 0; }
 
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+  border-color: #FFFF00; }
+
 .input__field--haruki {
   margin: 4em 1em 1em;
   padding: 0.4em 0.25em;
@@ -11827,12 +11830,13 @@ header.header--v2 .social-icons li a:focus {
   flex-direction: column;
   height: 100vh;
   width: 360px;
-  padding: 60px 0 0;
+  overflow-y: scroll;
+  padding: 80px 0 0;
   background-color: #131313; }
 
 .sidebar-container__inner {
   /*padding: 0 22px 30px;*/
-  padding: 0 22px 22px; }
+  padding: 0 22px 52px; }
 
 .wpcf7-response-output {
   color: #fff; }
@@ -11848,7 +11852,9 @@ header.header--v2 .social-icons li a:focus {
   max-width: 700px; }
 
 .sidebar-container h5 {
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px; }
 
 .sidebar-container p {
   font-size: 14px;
@@ -11866,17 +11872,13 @@ header.header--v2 .social-icons li a:focus {
   padding: 0;
   margin-bottom: 10px; }
 
-@media all and (min-width: 992px) {
-  .sidebar-container.--increased-form-padding {
-    -webkit-box-pack: center;
-    justify-content: center; } }
-
 .sidebar-container.--increased-form-padding form label {
   margin-bottom: 18px; }
 
 .sidebar-container form .join-form-button-wrapper {
   padding: 0;
-  width: 100%; }
+  width: 100%;
+  margin-top: 10px; }
 
 .sidebar-container .join-form-button-wrapper__inner {
   width: 100%; }

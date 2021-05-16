@@ -254,6 +254,10 @@ form {
   }
 }
 
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output {
+  border-color: $egleYellow;
+}
+
 .input__field--haruki {
   margin: 4em 1em 1em;
   padding: 0.4em 0.25em;

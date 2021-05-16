@@ -57,8 +57,9 @@
 
         <div class="sidebar-container --increased-form-padding">
           <div class="sidebar-container__inner">
-            <h5>Register Now</h5>
-            <p>We have no idea how you got to this page. But it’s a good thing you did - let’s make up for lost time. To register for a league complete the form below – solo and team options available.</p>
+            <h5>Join a League</h5>
+            <p>We have no idea how you got here. But it’s a good thing you did - let’s make up for lost time.</p>
+            <p>To register for a league complete the form below – solo and team options available.</p>
 
             <?php echo do_shortcode('[contact-form-7 id="2468" title="Join Us Form (sidebar)"]'); ?>
           </div>
