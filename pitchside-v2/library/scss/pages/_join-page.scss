@@ -364,9 +364,13 @@ form .join-form-button-wrapper {
     min-width: 300px;
     transition: color 400ms ease 80ms;
     box-shadow: none !important;
-
     font-family: 'Commuters Sans',sans-serif;
     padding: 22px 15px 23px;
+    @media all and (max-width: 600px) {
+      min-width: 1px;
+      max-width: 300px;
+      width: 100%;
+    }
 
     &:hover,
     &:focus {
@@ -384,7 +388,10 @@ form .join-form-button-wrapper {
   width: 300px;
   position: relative;
   margin: 0 auto;
-  // margin-left: auto;
+  @media all and (max-width: 600px) {
+    max-width: 300px;
+    width: 100%; 
+  }
 }
 
 span.wpcf7-not-valid-tip {
