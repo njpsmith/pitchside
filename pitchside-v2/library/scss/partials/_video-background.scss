@@ -7,6 +7,9 @@
    z-index: 0;
    pointer-events: none;
    overflow: hidden;
+   &.--not-full-width {
+      position: absolute;
+   }
 }
 .vimeo-wrapper iframe {
    width: 100vw;
@@ -21,10 +24,15 @@
 .video-overlay {
    position: absolute;
    z-index: 1;
-   top: 59px;
+   // top: 59px;
+   top: 0;
    left: 0;
-   height: calc(100% - 59px);
+   // height: calc(100% - 59px);
+   height: 100%;
    width: 100%;
    background-color: $black;
    opacity: 0.5;
 }
+
+
+

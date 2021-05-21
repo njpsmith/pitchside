@@ -14,18 +14,30 @@
     <div class="container-fluid">
       <div class="row home-hero--v3-row">
     		<section class="section home-hero home-hero--generic home-hero--v3">
-    			<div class="hh__background <?php if(!get_field('use_image_overlay')) { echo 'no-background-overlay'; } ?>">
-            <?php 
-            $img1 = get_field('background_image_1'); 
-            $img2 = get_field('background_image_2'); 
-            ?>
-    				<div class="image-wrapper cover <?php if($img2) { echo 'image-wrapper--two-images'; } ?>">
-              <img src="<?php echo $img1['sizes']['background']; ?>" alt="<?php the_field('title'); ?>" />
-              <?php if($img2) { ?>
-                <img src="<?php echo $img2['sizes']['background']; ?>" alt="<?php the_field('title'); ?>" />
-              <?php } ?>
-    				</div>
-    			</div>
+
+          <?php $videoURL = get_field('vimeo_url');
+          if($videoURL && $_GET['newpage'] == true) { ?>
+            <div class="vimeo-wrapper --not-full-width">
+              <iframe src="<?php echo $videoURL; ?>?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" allow="autoplay; fullscreen" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <div class="video-overlay"></div>
+            </div>
+
+          <?php } else { ?>
+
+      			<div class="hh__background <?php if(!get_field('use_image_overlay')) { echo 'no-background-overlay'; } ?>">
+              <?php 
+              $img1 = get_field('background_image_1'); 
+              $img2 = get_field('background_image_2'); 
+              ?>
+      				<div class="image-wrapper cover <?php if($img2) { echo 'image-wrapper--two-images'; } ?>">
+                <img src="<?php echo $img1['sizes']['background']; ?>" alt="<?php the_field('title'); ?>" />
+                <?php if($img2) { ?>
+                  <img src="<?php echo $img2['sizes']['background']; ?>" alt="<?php the_field('title'); ?>" />
+                <?php } ?>
+      				</div>
+      			</div>
+
+          <?php } ?>
 
     			<div class="content-wrapper">
     				<div class="hero-copy">

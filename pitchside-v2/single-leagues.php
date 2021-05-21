@@ -11,10 +11,9 @@
 
         
       <?php $videoURL = get_field('vimeo_url');
-      if($videoURL && $_GET['newpage'] == true) { ?>
+      if($videoURL) { ?>
         <div class="vimeo-wrapper">
-          <iframe src="<?php echo $videoURL; ?>?background=1&autoplay=1&loop=1&byline=0&title=0"
-                       frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="<?php echo $videoURL; ?>?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" allow="autoplay; fullscreen" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           <div class="video-overlay"></div>
         </div>
 
