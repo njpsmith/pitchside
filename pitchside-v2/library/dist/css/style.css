@@ -12155,7 +12155,6 @@ header.header--v2 .social-icons li a:focus {
 
 .line-1 {
   width: 200px;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   overflow: hidden;
   /*-webkit-box-sizing:content-box;*/
@@ -12163,7 +12162,6 @@ header.header--v2 .social-icons li a:focus {
 
 .line-2 {
   width: 130px;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   overflow: hidden; }
 
@@ -12176,3 +12174,7 @@ header.header--v2 .social-icons li a:focus {
 .sidebar-container form input.wpcf7-not-valid,
 .sidebar-container .wpcf7-not-valid input[type=checkbox] + span:before {
   border: 1px solid red !important; }
+
+.home .sidebar-container {
+  position: relative;
+  z-index: 1; }
